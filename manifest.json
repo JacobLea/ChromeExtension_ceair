@@ -1,0 +1,23 @@
+{
+	"manifest_version": 2,
+	"name": "抢机票(CSS_CLICK)",
+	"permissions": [
+		"notifications"
+	],
+	"version": "2.0",
+	"description": "抢机票",
+	"icons": { "128": "ironHand_16.png" },
+	"browser_action": {
+		"default_title": "抢机票啦",
+		"default_icon": "ironHand_96.png",
+		"default_popup": "popup.html"
+	},
+	"content_scripts": [
+		{
+			"matches": ["http://www.ceair.com/flight2014/pvg-riz-170126_CNY.html"],
+			"css": ["style.css"],
+			"js": ["jQuery_v2.0.3.js","injection.js"],
+			"run_at": "document_idle"
+		}
+	]
+}

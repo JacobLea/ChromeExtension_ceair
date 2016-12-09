@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style type="text/css">
+			label{
+				margin: 3px;
+			}
+			input{
+				margin: 3px;
+			}
+		</style>		
+	</head>
+	<body>
+		<div>
+			<div>
+				<div>
+					<lable for="target_src">目的地址:</lable><input type="text" id="target_src" style="width: 200px;"/>
+					<input type="button" id="enter_button" value="进入"/>
+				</div>
+				<div>
+					<lable for="secends">循环间隔时间:</lable><input type="text" id="secends"　value="0.3" style="width: 50px;"/>S
+					<input type="button" id="apply_button" value="应用"/>
+				</div>
+				<div></div>
+			</div>
+		</div>
+		<script type="text/javascript" src="jQuery_v2.0.3.js"></script>
+		<script type="text/javascript">
+			var doit = function() {
+				console.log('clicked');
+			};
+			$('#apply_button').click(doit);
+		</script>		
+	</body>
+</html>
